@@ -30,19 +30,6 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-console.log("NOTIFICATIONS")
-console.log(accountSID)
-console.log(authToken)
-console.log(service)
-console.log(port)
-console.log(mailUser)
-console.log(mailPass)
-console.log(adminMail)
-console.log(twilioRegPhoneWhatsapp)
-console.log(adminPhoneWhatsapp)
-console.log(twilioRegPhoneSms)
-console.log(adminNumberSms)
-
 export const adminNewUserNotification = async (newUser) => {
 
     let usuario = newUser.username;
