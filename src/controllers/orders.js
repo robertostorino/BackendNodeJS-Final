@@ -19,5 +19,5 @@ export const notifyOrder = async (req, res) => {
     serviceCart.clearCart(cartId);
     let cartProducts = cart[0].products;
     const newOrder = JSON.stringify(cartProducts);
-    res.json({Ok: 'Order Created and notifications sended'})
+    res.json({error: 0, message: 'Order Created and notifications sended'})
 };

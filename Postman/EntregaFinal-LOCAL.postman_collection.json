@@ -321,7 +321,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"rober__17@hotmail.com\",\r\n    \"password\": \"rober\"\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"

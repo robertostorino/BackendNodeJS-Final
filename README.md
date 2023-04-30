@@ -428,49 +428,8 @@ POST http://localhost:8080/api/login
 	
 ### Ejemplo respuesta
 
-```json
-{
-	"ok": "sesion iniciada correctamente",
-	"productos disponibles": {
-		"0": {
-			"idStore": 3,
-			"descripcion": "Pelota de basket",
-			"timestamp": 1670096837624,
-			"nombre": "Pelota de basket",
-			"foto": "https://cdn4.iconfinder.com/data/icons/sports-flat-2/48/Basketball-512.png",
-			"stock": "50",
-			"precio": "30",
-			"codigo": "Pelota de basket"
-		},
-		"1": {
-			"codigo": "Pelota de futbol",
-			"precio": 35,
-			"timestamp": 1670096837624,
-			"foto": "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/football-512.png",
-			"nombre": "Pelota de futbol",
-			"descripcion": "Pelota de futbol",
-			"stock": 78,
-			"idStore": 2
-		},
-		"2": {
-			"foto": "https://cdn1.iconfinder.com/data/icons/rcons-basic-sport/16/fitness_tennis_game_raquet_training_play_sport-512.png",
-			"codigo": "Raqueta",
-			"idStore": 1,
-			"stock": 25,
-			"timestamp": 1670096837624,
-			"precio": 100,
-			"descripcion": "Raqueta",
-			"nombre": "Raqueta"
-		}
-	},
-	"su carrito": {
-		"_id": "640271314e5af1b4ad62c59f",
-		"timestamp": 1677881649798,
-		"productos": [],
-		"__v": 0
-	}
-}
-```
+Se muestra el html de la página principal
+
 </details>
 <br>
 
@@ -485,28 +444,25 @@ POST http://localhost:8080/api/register
 
 ```json
 {
-	"username": "fede@fede.com",
-	"password": "fede-password",
-	"nombre": "fede",
-	"direccion": "avenida siempre viva 123",
-	"edad": 30,
-	"telefono": 1155550000,
-	"avatar": "https://pics.filmaffinity.com/avatar_the_way_of_water-722646748-mmed.jpg"
+    "username": "carlos3@carlos.com",
+    "password": "carlos-pass",
+    "name": "Carlos3",
+    "address": "av. Las Heras 7771",
+    "telephone": "2215890023",
+    "age": 37,
+    "avatar": "https://pics.filmaffinity.com/avatar_the_way_of_water-722646748-mmed.jpg"
 }
 ```
 	
 ### Ejemplo respuesta
 
-```json
-{
-	"ok": "registro de usuario realizado correctamente"
-}
-```
+Se muestra el html de la página principal
+
 </details>
 <br>
 
 <details>
-<summary>GET <b>/api/fail-login </b></summary> 
+<summary>GET <b>/api/login/error </b></summary> 
 
 ```js
 POST http://localhost:8080/api/login
@@ -522,16 +478,12 @@ POST http://localhost:8080/api/login
 	
 ### Ejemplo respuesta
 
-```json
-{
-	"error": "no fue posible completar el login, verifique usuario y contraseña"
-}
-```
+Se muestra el html de la página error
 </details>
 <br>
 
 <details>
-<summary>GET <b>/api/fail-register </b></summary> 
+<summary>GET <b>/api/signup/error </b></summary> 
 
 ```js
 POST http://localhost:8080/api/register
@@ -540,110 +492,34 @@ POST http://localhost:8080/api/register
 
 ```json
 {
-	"username": "usuario-en-uso",
-	"password": "password",
-	"nombre": "federico",
-	"direccion": "avenida siempre viva 123",
-	"edad": 30,
-	"telefono": 1155550000,
-	"avatar": "https://pics.filmaffinity.com/avatar_the_way_of_water-722646748-mmed.jpg"
+    "username": "carlos3@carlos.com",
+    "password": "carlos-pass",
+    "name": "Carlos3",
+    "address": "av. Las Heras 7771",
+    "telephone": "2215890023",
+    "age": 37,
+    "avatar": "https://pics.filmaffinity.com/avatar_the_way_of_water-722646748-mmed.jpg"
 }
 ```
 	
 ### Ejemplo respuesta
 
-```json
-{
-	"error": "el usuario ya esta en uso"
-}
-```
+Se muestra el html de la página error
 </details>
 <br>
 
 <details>
-<summary>GET <b>/api/home </b></summary> 
+<summary>GET <b>/ </b></summary> 
 
 ```js
-GET http://localhost:8080/api/home
+GET http://localhost:8080/
 ```
 	
 ### Ejemplo respuesta
 
-```json
-{
-	"ok": "sesion iniciada correctamente",
-	"productos disponibles": {
-		"0": {
-			"stock": "50",
-			"foto": "https://cdn4.iconfinder.com/data/icons/sports-flat-2/48/Basketball-512.png",
-			"timestamp": 1670096837624,
-			"descripcion": "Pelota de basket",
-			"nombre": "Pelota de basket",
-			"codigo": "Pelota de basket",
-			"idStore": 3,
-			"precio": "30"
-		},
-		"1": {
-			"codigo": "Pelota de futbol",
-			"nombre": "Pelota de futbol",
-			"foto": "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/football-512.png",
-			"descripcion": "Pelota de futbol",
-			"timestamp": 1670096837624,
-			"stock": 78,
-			"idStore": 2,
-			"precio": 35
-		},
-		"2": {
-			"foto": "https://cdn1.iconfinder.com/data/icons/rcons-basic-sport/16/fitness_tennis_game_raquet_training_play_sport-512.png",
-			"codigo": "Raqueta",
-			"descripcion": "Raqueta",
-			"timestamp": 1670096837624,
-			"idStore": 1,
-			"precio": 100,
-			"stock": 25,
-			"nombre": "Raqueta"
-		}
-	},
-	"su carrito": {
-		"_id": "640271314e5af1b4ad62c59f",
-		"timestamp": 1677881649798,
-		"productos": [],
-		"__v": 0
-	}
-}
-```
+Se muestra el html de la página principal
 </details>
 <br>
-
-<details>
-<summary>GET <b>/api/succesfull-register </b></summary> 
-
-```js
-POST http://localhost:8080/api/register
-```
-### Ejemplo solicitud
-
-```json
-{
-	"username": "fede@fede.com",
-	"password": "fede-password",
-	"nombre": "fede",
-	"direccion": "avenida siempre viva 123",
-	"edad": 30,
-	"telefono": 1155550000,
-	"avatar": "https://pics.filmaffinity.com/avatar_the_way_of_water-722646748-mmed.jpg"
-}
-```
-	
-### Ejemplo respuesta
-
-```json
-{
-	"ok": "registro de usuario realizado correctamente"
-}
-```
-</details>
-
 
 <details>
 <summary>GET <b>/api/logout </b></summary> 
@@ -654,13 +530,9 @@ GET http://localhost:8080/api/logout
 	
 ### Ejemplo respuesta
 
-```json
-{
-	"ok": "sesion cerrada correctamente"
-}
-```
+Se muestra el html de la página de login
 </details>
-
+<br>
 
 <details>
 <summary>POST <b>/api/order </b></summary> 
@@ -673,7 +545,8 @@ POST http://localhost:8080/api/order
 
 ```json
 {
-    "Ok": "Order Created and notifications sended"
+    "error": 0,
+    "message": "Order Created and notifications sended"
 }
 ```
 </details>
