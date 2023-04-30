@@ -87,7 +87,6 @@ A su vez, desde el archivo .env en la constante EXECUTION_MODE, se puede fijar:
 | GET	  | /login/error				    | Se obtiene al ingresar credenciales no válidas en el POST de loggin		 	|
 | GET	  | /signup/error				    | Se obtiene al no poder concretar el registro de un nuevo usuario			 	|
 | GET	  | /					    | Se obtiene al realizar un login exitoso	|
-| GET	  | /api/succesfull-register			    | Se obtiene al realizar un registro de nuevo usuario exitoso		 		|
 | GET	  | /logout					    | Permite cerrar una sesion activa						 		|
 | POST	  | /order				    | Continua el proceso de confirmar la compra del carrito de la sesion activa		|
 
